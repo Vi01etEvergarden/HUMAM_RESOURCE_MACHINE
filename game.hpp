@@ -1,7 +1,8 @@
 #ifndef GAME_HPP
 #define GAME_HPP
 
-
+#define MAX_CNV 10
+#define MAX_AREA 5
 /*
 need global variables:
 	int	boxInHand
