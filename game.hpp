@@ -6,11 +6,10 @@
 /*
 need global variables:
 	int	boxInHand
-	char inConv[]
-	char outConv[]	
-	char area[]      //using "char" to save 1~9 and 'X' 
-					//using atio() to transfer a char 'num' to a real num which can be involved into computation 
-
+	int inConv[]
+	int outConv[]	
+	int area[]       
+				//using func intToString to the num as a string " 3 " or " X "
 need functions :
 	
 	init interface
@@ -34,7 +33,7 @@ need functions :
 
 */
 
-
+char* intToString(int num);
 
 
 
