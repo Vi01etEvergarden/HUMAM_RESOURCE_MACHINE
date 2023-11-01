@@ -1,5 +1,4 @@
-#ifndef GAME_HPP
-#define GAME_HPP
+#pragma once
 
 #define MAX_CNV 10
 #define MAX_AREA 5
@@ -55,11 +54,5 @@ typedef struct _operate
 
 }operate;
 
-conveyor inCnv , outCnv;
-int area[MAX_AREA];
-int boxInHand; 
-char lInfo[40]="temp level info";
-operate cmd[MAX_CMD];
 
-#endif
 
