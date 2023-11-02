@@ -5,6 +5,8 @@
 #define pXX %s
 #define dXX %3d
 #define MAX_CMD 20
+
+#define inDisplay(x) (inCnv.Top>=x) ? intToString(inCnv.Idx[x]) : " X ")
 /*
 need global variables:
 	int	boxInHand
@@ -54,5 +56,10 @@ typedef struct _operate
 
 }operate;
 
-
+extern conveyor inCnv , outCnv;
+extern int area[MAX_AREA];
+extern int boxInHand;
+extern bool Hand; 
+extern char lInfo[40];
+extern operate cmd[MAX_CMD];
 
