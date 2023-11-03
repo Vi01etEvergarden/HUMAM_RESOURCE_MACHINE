@@ -6,7 +6,11 @@
 #define dXX %3d
 #define MAX_CMD 20
 
-#define inDisplay(x) (inCnv.Top>=x) ? intToString(inCnv.Idx[x]) : " X ")
+#define inDisplay(x) ((inCnv.Top>=x) ? intToString(inCnv.Idx[x]) : " X ")
+#define outDisplay(x) ((outCnv.Top>=x) ? intToString(outCnv.Idx[x]) : " X ")
+#define arrowDis(x,cmdIdx) (cmdIdx==x ? '>' : '*')
+#define cmdDis(x) (x<=cmdNum ? intToString(x) : "   "),(x<=cmdNum ? cmd[x].command : " ")
+
 /*
 need global variables:
 	int	boxInHand
@@ -62,4 +66,4 @@ extern int boxInHand;
 extern bool Hand; 
 extern char lInfo[40];
 extern operate cmd[MAX_CMD];
-
+extern int cmdNum;

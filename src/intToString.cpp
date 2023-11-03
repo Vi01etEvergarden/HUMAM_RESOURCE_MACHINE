@@ -1,29 +1,24 @@
 #include "game.hpp"
 #include <stdio.h>
-#include<stdlib.h> 
-
-
+#include <stdlib.h> 
 
 char* intToString(int num)
 {
-    int numLength = 3; // 初始化为3，以保证有足够的空间
-    if (num < 10) {
-        numLength = 2; // 如果是一位数，将长度改为2
-    }
-
-    char* str = (char*)malloc(numLength * sizeof(char)); // 分配堆上的内存
+    char* str = (char*)malloc(4 * sizeof(char)); // 分配堆上的内存，多一个位置给终止符
 
     if (str != NULL)
     {
-    	    if (num < 10) {
-        	snprintf(str, numLength + 1, "%2d ", num);
-    	}
-    	else{
-	
-        	snprintf(str, numLength + 1, "%3d", num); // 使用 snprintf 替代 sprintf，以避免缓冲区溢出
-    		}
-	}
+        if (num < 10)
+        {
+            snprintf(str, 4, " %1d ", num); // 一位数时格式化为空格数字空格
+        }
+        else if (num >= 10 && num < 100)
+        {
+            snprintf(str, 4, " %2d", num); // 两位数时格式化为空格两位数
+        }
+    }
 
     return str;
 }
+
 
