@@ -8,6 +8,8 @@ char lInfo[40]="temp level info";
 operate cmd[MAX_CMD];
 bool Hand;
 int cmdNum;
+
+
 int main(int argc, char *argv[])
 {
     std::cout << "Hello world!" << std::endl;
@@ -22,5 +24,5 @@ int main(int argc, char *argv[])
     strcpy(cmd[1].command,"inbox"); 
     printf("%s\n",cmd[1].command);
 //test    
-    stdPrint(1);
+    stdPrint(2);
 }

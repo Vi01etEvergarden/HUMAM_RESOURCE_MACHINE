@@ -2,14 +2,12 @@
 
 #define MAX_CNV 10
 #define MAX_AREA 5
-#define pXX %s
-#define dXX %3d
 #define MAX_CMD 20
 
-#define inDisplay(x) ((inCnv.Top>=x) ? intToString(inCnv.Idx[x]) : " X ")
-#define outDisplay(x) ((outCnv.Top>=x) ? intToString(outCnv.Idx[x]) : " X ")
-#define arrowDis(x,cmdIdx) (cmdIdx==x ? '>' : '*')
-#define cmdDis(x) (x<=cmdNum ? intToString(x) : "   "),(x<=cmdNum ? cmd[x].command : " ")
+#define inDisplay(x) ((inCnv.Top>=x) ? intToString(inCnv.Idx[x]) : " X ")      //display box on inCnv or "X"	x refers to row index in stdPrint
+#define outDisplay(x) ((outCnv.Top>=x) ? intToString(outCnv.Idx[x]) : " X ")	//display box on outCnv or "X"	x referd to row index in stdPrint
+#define arrowDis(x,cmdIdx) (cmdIdx==x ? '>' : '*')								//display '>' in front of current cmd otherwise '*'		x refers to rowIdx+1 in stdPrint
+#define cmdDis(x) (x<=cmdNum ? intToString(x) : "   "),(x<=cmdNum ? cmd[x].command : " ")    //display cmd index and text if available
 
 /*
 need global variables:
@@ -41,9 +39,9 @@ need functions :
 
 */
 
-char* intToString(int num);
-void logMessage(const char* message);
-void stdPrint(int cmdIdx);
+char* intToString(int num);		//format transfer an int into a string (length == 3)
+void logMessage(const char* message);	//print logmessage into my_log.txt
+void stdPrint(int cmdIdx);	//input current cmd index
 
 
 typedef struct _conveyor

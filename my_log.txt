@@ -44,3 +44,11 @@ successful print cmd1
 successful print cmd1
 successful print cmd1
 successful print cmd1
+successful print cmd1
+successful print cmd1
+successful print cmd1
+successful print cmd1
+successful print cmd2
+successful print cmd2
+successful print cmd2
+successful print cmd2
