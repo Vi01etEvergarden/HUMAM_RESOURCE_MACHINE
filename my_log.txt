@@ -52,3 +52,5 @@ successful print cmd2
 successful print cmd2
 successful print cmd2
 successful print cmd2
+successful print cmd2
+successful print cmd2

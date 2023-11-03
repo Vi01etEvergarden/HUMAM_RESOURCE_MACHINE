@@ -8,7 +8,7 @@ char lInfo[40]="temp level info";
 operate cmd[MAX_CMD];
 bool Hand;
 int cmdNum;
-
+//test 
 
 int main(int argc, char *argv[])
 {
