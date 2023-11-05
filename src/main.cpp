@@ -9,7 +9,8 @@ operate cmd[MAX_CMD];
 bool Hand;
 int cmdNum;
 //test 
-//test  
+//test
+//branch test0  
 int main(int argc, char *argv[])
 {
     std::cout << "Hello world!" << std::endl;
