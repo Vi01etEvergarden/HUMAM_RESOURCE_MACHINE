@@ -9,7 +9,7 @@ operate cmd[MAX_CMD];
 bool Hand;
 int cmdNum;
 //test 
-
+//test  
 int main(int argc, char *argv[])
 {
     std::cout << "Hello world!" << std::endl;
