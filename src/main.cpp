@@ -10,7 +10,7 @@ bool Hand;
 int cmdNum;
 //test 
 //test
-//branch test0  
+//branch test0  ok¼ÓÍêÁË 
 int main(int argc, char *argv[])
 {
     std::cout << "Hello world!" << std::endl;
